@@ -24,7 +24,7 @@ class DetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val car = arguments?.getSerializable("r")  as CarModel
+        val car = arguments?.getSerializable("r") as CarModel
         initFields(car)
     }
 

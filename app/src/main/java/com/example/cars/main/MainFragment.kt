@@ -11,7 +11,6 @@ import com.example.cars.R
 import com.example.cars.databinding.FragmentMainBinding
 import com.example.cars.main.adapter.MainAdapter
 import com.example.cars.models.CarModel
-import com.example.cars.utils.Сonstants.REQUIRES_KEY_UPDATE_CAR
 
 class MainFragment : Fragment() {
 

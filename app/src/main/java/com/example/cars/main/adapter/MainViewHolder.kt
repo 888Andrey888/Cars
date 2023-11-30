@@ -1,6 +1,5 @@
 package com.example.cars.main.adapter
 
-import android.util.Log
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cars.databinding.CarItemBinding
 import com.example.cars.models.CarModel
@@ -14,7 +13,6 @@ class MainViewHolder(private val binding: CarItemBinding) :
         imgSmall.loadImage(car.image)
 
         itemView.setOnClickListener {
-            Log.d("ololo", "bind: $car")
             onClick(car)
         }
     }

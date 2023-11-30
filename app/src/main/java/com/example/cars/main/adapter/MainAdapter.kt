@@ -45,7 +45,7 @@ class MainAdapter(private val onClick: (car: CarModel) -> Unit) :
         )
     )
 
-    override fun getItemCount()= cars.size
+    override fun getItemCount() = cars.size
 
     override fun onBindViewHolder(holder: MainViewHolder, position: Int) {
         holder.bind(cars[position], onClick)
