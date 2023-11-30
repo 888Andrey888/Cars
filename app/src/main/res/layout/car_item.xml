@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/small_indentation">
+
+    <ImageView
+        android:id="@+id/img_small"
+        android:layout_width="@dimen/small_image_size"
+        android:layout_height="@dimen/small_image_size"
+        android:scaleType="fitXY"
+        android:src="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_mark"
+        app:layout_constraintStart_toEndOf="@+id/img_small"
+        app:layout_constraintTop_toTopOf="@+id/img_small"
+        tools:text="Mersedes"
+        style="@style/item_text_view" />
+
+    <TextView
+        android:id="@+id/tv_year"
+        app:layout_constraintStart_toEndOf="@+id/img_small"
+        app:layout_constraintBottom_toBottomOf="@+id/img_small"
+        tools:text="2017"
+        android:textSize="@dimen/small_text_size"
+        android:textStyle="normal"
+        style="@style/item_text_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
